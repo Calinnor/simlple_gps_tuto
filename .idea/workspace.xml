@@ -9,12 +9,16 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="996ea229-1897-415b-b4f0-72cde5967df4" name="Default Changelist" comment="" />
+    <list default="true" id="996ea229-1897-415b-b4f0-72cde5967df4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/GPS_Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@FA75T1800535]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -48,10 +52,17 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="step_one_simple_gps_with_user_permission_required_on_device_settings" />
+        <entry key="$PROJECT_DIR$" value="step_two_adding_popup_permissions_at_starting_app" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -163,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623496096876</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit on second branch : adding popup for permissions at starting app">
+      <created>1623496560418</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1623496560418</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -172,18 +190,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="Commit on second branch : adding popup for permissions at starting app" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="411" y="17" key="CommitChangelistDialog2" timestamp="1623495690164">
+    <state x="411" y="17" key="CommitChangelistDialog2" timestamp="1623496558079">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="411" y="17" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1623495690164" />
+    <state x="411" y="17" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1623496558079" />
     <state x="580" y="171" key="FileChooserDialogImpl" timestamp="1623495568854">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="171" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1623495568854" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1623495815828">
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1623496597715">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1623495815828" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1623496597715" />
     <state x="601" y="336" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1623495810458">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
