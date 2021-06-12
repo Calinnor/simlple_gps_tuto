@@ -16,6 +16,7 @@ public class GPS_Receiver implements LocationListener {
 
     //step 2 add Context and constructor
     Context context;
+    private LocationManager locationManager;
 
     public GPS_Receiver(Context context) {
         this.context = context;
@@ -28,7 +29,7 @@ public class GPS_Receiver implements LocationListener {
         //with ContextCompat
         if (ContextCompat.checkSelfPermission(context, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
                 ContextCompat.checkSelfPermission(context, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            Toast.makeText(context, "Permissions not granted ! Apply manually in app setting of your device", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(context, "Permissions not granted ! Apply manually in app setting of your device", Toast.LENGTH_SHORT).show();
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
             // here to request the missing permissions, and then overriding
@@ -56,12 +57,21 @@ public class GPS_Receiver implements LocationListener {
 
         //if(ContextCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION))
         // step 4.1 get systemService via context
-        LocationManager locationManager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
+        locationManager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
         //step 4.2 check if gps is enable
         boolean isGpsEnable = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
         if (isGpsEnable) {
             //step 4.5 create request to lacation
-            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 10, this);
+            String locationManagerRequest = "";
+            if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+                locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 10, this);
+                }
+            if (locationManager.isProviderEnabled(LocationManager.PASSIVE_PROVIDER)) {
+                locationManager.requestLocationUpdates(LocationManager.PASSIVE_PROVIDER, 500, 10, this);
+            }
+            if (locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
+                locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 500, 10, this);
+            }
             //step 6:
             Location locationToReturn = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
             return locationToReturn;
@@ -71,13 +81,9 @@ public class GPS_Receiver implements LocationListener {
             //step 4.3
             Toast.makeText(context, "Please, activate GPS !", Toast.LENGTH_SHORT).show();
         }
-
         //Location getLocation() return...in other case
         return null;
-
-
     }
-
 
     @Override
     public void onLocationChanged(@NonNull Location location) {

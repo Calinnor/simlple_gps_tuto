@@ -10,8 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="996ea229-1897-415b-b4f0-72cde5967df4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/GPS_Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/MyGPSTuto.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/MyGPSTuto.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/GPS_Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/GPS_Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/MainActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +76,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="step_two_adding_popup_permissions_at_starting_app" />
+        <entry key="$PROJECT_DIR$" value="step_three_create_dedied_class_to_receive_and_fetch_gps_location" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -84,6 +98,11 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
+  <component name="RecentsManager">
+    <key name="android.template.1081438914">
+      <recent name="com.cirederf.mygpstuto" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
@@ -92,7 +111,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="MyGPSTuto.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -181,30 +200,118 @@
       <option name="project" value="LOCAL" />
       <updated>1623496560418</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Commit on third branch : implement dedied class to fetch location">
+      <created>1623497121625</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1623497121625</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit : simple implementation with allowed permission by user in app setting on device." />
     <MESSAGE value="Commit on second branch : adding popup for permissions at starting app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit on second branch : adding popup for permissions at starting app" />
+    <MESSAGE value="Commit on third branch : implement dedied class to fetch location" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit on third branch : implement dedied class to fetch location" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="411" y="17" key="CommitChangelistDialog2" timestamp="1623496558079">
+    <state x="605" y="136" key="#com.intellij.ide.util.MemberChooser" timestamp="1623500468665">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="411" y="17" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1623496558079" />
+    <state x="605" y="136" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1623500468665" />
+    <state x="411" y="17" key="CommitChangelistDialog2" timestamp="1623497119970">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="411" y="17" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1623497119970" />
     <state x="580" y="171" key="FileChooserDialogImpl" timestamp="1623495568854">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="171" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1623495568854" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1623496597715">
+    <state width="1557" height="65" key="GridCell.Tab.0.bottom" timestamp="1623502543030">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1623496597715" />
+    <state width="1557" height="65" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1623502543030" />
+    <state width="1557" height="65" key="GridCell.Tab.0.center" timestamp="1623502543030">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="65" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1623502543030" />
+    <state width="1557" height="65" key="GridCell.Tab.0.left" timestamp="1623502543030">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="65" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1623502543029" />
+    <state width="1557" height="65" key="GridCell.Tab.0.right" timestamp="1623502543030">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="65" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1623502543030" />
+    <state width="1557" height="65" key="GridCell.Tab.1.bottom" timestamp="1623502550970">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="65" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1623502550970" />
+    <state width="1557" height="65" key="GridCell.Tab.1.center" timestamp="1623502550970">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="65" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1623502550970" />
+    <state width="1557" height="65" key="GridCell.Tab.1.left" timestamp="1623502550970">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="65" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1623502550970" />
+    <state width="1557" height="65" key="GridCell.Tab.1.right" timestamp="1623502550970">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="65" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1623502550970" />
+    <state x="380" y="173" key="IDE.errors.dialog" timestamp="1623498002035">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="380" y="173" key="IDE.errors.dialog/0.0.1600.860@0.0.1600.860" timestamp="1623498002035" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1623497182610">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1623497182610" />
     <state x="601" y="336" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1623495810458">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="601" y="336" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1600.860@0.0.1600.860" timestamp="1623495810458" />
+    <state x="500" y="187" key="refactoring.ChangeSignatureDialog" timestamp="1623499114675">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="500" y="187" key="refactoring.ChangeSignatureDialog/0.0.1600.860@0.0.1600.860" timestamp="1623499114675" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/GPS_Receiver.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/GPS_Receiver.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/GPS_Receiver.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/GPS_Receiver.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/GPS_Receiver.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/GPS_Receiver.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
