@@ -10,22 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="996ea229-1897-415b-b4f0-72cde5967df4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/MyGPSTuto.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/MyGPSTuto.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/GPS_Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/GPS_Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/MainActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,42 +221,42 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="171" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1623495568854" />
-    <state width="1557" height="65" key="GridCell.Tab.0.bottom" timestamp="1623502543030">
+    <state width="1557" height="120" key="GridCell.Tab.0.bottom" timestamp="1623504294136">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="65" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1623502543030" />
-    <state width="1557" height="65" key="GridCell.Tab.0.center" timestamp="1623502543030">
+    <state width="1557" height="120" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1623504294136" />
+    <state width="1557" height="120" key="GridCell.Tab.0.center" timestamp="1623504294136">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="65" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1623502543030" />
-    <state width="1557" height="65" key="GridCell.Tab.0.left" timestamp="1623502543030">
+    <state width="1557" height="120" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1623504294136" />
+    <state width="1557" height="120" key="GridCell.Tab.0.left" timestamp="1623504294136">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="65" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1623502543029" />
-    <state width="1557" height="65" key="GridCell.Tab.0.right" timestamp="1623502543030">
+    <state width="1557" height="120" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1623504294136" />
+    <state width="1557" height="120" key="GridCell.Tab.0.right" timestamp="1623504294136">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="65" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1623502543030" />
-    <state width="1557" height="65" key="GridCell.Tab.1.bottom" timestamp="1623502550970">
+    <state width="1557" height="120" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1623504294136" />
+    <state width="1557" height="120" key="GridCell.Tab.1.bottom" timestamp="1623504294151">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="65" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1623502550970" />
-    <state width="1557" height="65" key="GridCell.Tab.1.center" timestamp="1623502550970">
+    <state width="1557" height="120" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1623504294151" />
+    <state width="1557" height="120" key="GridCell.Tab.1.center" timestamp="1623504294136">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="65" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1623502550970" />
-    <state width="1557" height="65" key="GridCell.Tab.1.left" timestamp="1623502550970">
+    <state width="1557" height="120" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1623504294136" />
+    <state width="1557" height="120" key="GridCell.Tab.1.left" timestamp="1623504294136">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="65" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1623502550970" />
-    <state width="1557" height="65" key="GridCell.Tab.1.right" timestamp="1623502550970">
+    <state width="1557" height="120" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1623504294136" />
+    <state width="1557" height="120" key="GridCell.Tab.1.right" timestamp="1623504294151">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="65" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1623502550970" />
-    <state x="380" y="173" key="IDE.errors.dialog" timestamp="1623498002035">
+    <state width="1557" height="120" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1623504294151" />
+    <state x="380" y="173" key="IDE.errors.dialog" timestamp="1623504267252">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="380" y="173" key="IDE.errors.dialog/0.0.1600.860@0.0.1600.860" timestamp="1623498002035" />
+    <state x="380" y="173" key="IDE.errors.dialog/0.0.1600.860@0.0.1600.860" timestamp="1623504267252" />
     <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1623497182610">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -283,33 +275,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/GPS_Receiver.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="14" />
+          <line>29</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/GPS_Receiver.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/GPS_Receiver.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/GPS_Receiver.java</url>
-          <line>84</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/GPS_Receiver.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/GPS_Receiver.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="19" />
+          <line>30</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

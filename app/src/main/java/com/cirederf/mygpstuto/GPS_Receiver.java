@@ -62,9 +62,8 @@ public class GPS_Receiver implements LocationListener {
         boolean isGpsEnable = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
         if (isGpsEnable) {
             //step 4.5 create request to lacation
-            String locationManagerRequest = "";
             if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
-                locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 10, this);
+                locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 500, 10, this);
                 }
             if (locationManager.isProviderEnabled(LocationManager.PASSIVE_PROVIDER)) {
                 locationManager.requestLocationUpdates(LocationManager.PASSIVE_PROVIDER, 500, 10, this);
