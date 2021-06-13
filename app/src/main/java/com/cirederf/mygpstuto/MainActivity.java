@@ -6,10 +6,14 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.Looper;
+import android.os.ResultReceiver;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -21,22 +25,29 @@ import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
 
-//step 1 create xml, declare and initiate xml attributs
-//step 2 in manifest
+
 public class MainActivity extends AppCompatActivity {
 
-    //step 3 other attributs
     private static final int REQUEST_CODE_LOCATION_PERMISSIONS = 12340;
 
     private Button buttonGetLocation;
     private TextView textCurrentLocation, textAddress;
     private ProgressBar progressBar;
-    private LocationManager locationManager;
 
+    //step 10
+    private ResultReceiver resultReceiver;
+    //step 11 initiate resultReceiver (here in main)
+
+    //step 1 create a class for fetch address
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //step 11
+        resultReceiver = new AdressesResultReceiver(new Handler());
+        //step 12 create a method to fetchAdress
+
         textCurrentLocation = findViewById(R.id.current_location);
         textAddress = findViewById(R.id.textAdress);
         buttonGetLocation = findViewById(R.id.button_get_current_location);
@@ -44,7 +55,14 @@ public class MainActivity extends AppCompatActivity {
         onButtonLocationClick();
     }
 
-    //step 5 listener onClick with method calling location
+    //step 12
+    private void fetchAddressFromCoordinates(Location location) {
+        Intent intent = new Intent(this, FetchAddressWithFusedLocation.class);
+        intent.putExtra(Constants.RECEIVER, resultReceiver);
+        intent.putExtra(Constants.LOCATION_DATA_EXTRAS, location);
+        startService(intent);
+    }//step 13 in getCurrentLocation()
+
     private void onButtonLocationClick() {
         buttonGetLocation.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    //step 7 onRequestResume
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -67,13 +84,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    //step 6 initiate the method to geLocation
     private void getCurrentLocation() {
-        //step 8 implement method
-        //8.1 progressbar
         progressBar.setVisibility(View.VISIBLE);
 
-        //8.2 set speed to refresh data
         LocationRequest locationRequest = new LocationRequest();
         locationRequest.setInterval(5000);
         locationRequest.setFastestInterval(2500);
@@ -93,8 +106,6 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-
-        //8.3 implement fusedLocation
         LocationServices.getFusedLocationProviderClient(MainActivity.this)
                 .requestLocationUpdates(locationRequest, new LocationCallback() {
 
@@ -102,11 +113,9 @@ public class MainActivity extends AppCompatActivity {
                     public void onLocationResult(LocationResult locationResult) {
                         super.onLocationResult(locationResult);
 
-                        //unsuscribe
-                        LocationServices.getFusedLocationProviderClient(MainActivity.this)
+                       LocationServices.getFusedLocationProviderClient(MainActivity.this)
                                 .removeLocationUpdates(this);
 
-                        //if there's data in locationResult
                         if(locationResult != null && locationResult.getLocations().size() > 0) {
 
                             int latestLocationIndex = locationResult.getLocations().size() -1;
@@ -119,11 +128,49 @@ public class MainActivity extends AppCompatActivity {
                                             latitude, longitude
                                     )
                             );
+                            //step 14
+                            Location location = new Location("providerNA");
+                            location.setLatitude(latitude);
+                            location.setLongitude(longitude);
+                            fetchAddressFromCoordinates(location);
+                          //step 13 placing here progressBar
+                        }else {
+                            progressBar.setVisibility(View.GONE);
                         }
-                        progressBar.setVisibility(View.GONE);
+                        //in step 13 progressBar move just ahead
+//                        progressBar.setVisibility(View.GONE);
 
                     }
                 }
                 , Looper.getMainLooper());
+    }
+
+    //step 9 create class which receive results for addresses
+    private class AdressesResultReceiver extends ResultReceiver {
+
+        //step 9.1 constructor without public
+        /**
+         * Create a new ResultReceive to receive results.  Your
+         * {@link #onReceiveResult} method will be called from the thread running
+         * <var>handler</var> if given, or from an arbitrary thread if null.
+         *
+         * @param handler
+         */
+        AdressesResultReceiver(Handler handler) {
+            super(handler);
+        }
+
+        //step 9.2 onReceiverResult
+        @Override
+        protected void onReceiveResult(int resultCode, Bundle resultData) {
+            super.onReceiveResult(resultCode, resultData);
+            if (resultCode == Constants.SUCCES_RESULT) {
+                textAddress.setText(resultData.getString(Constants.RESULT_DATA_KEY));
+            }else {
+                Toast.makeText(MainActivity.this, resultData.getString(Constants.RESULT_DATA_KEY), Toast.LENGTH_SHORT).show();
+            }
+            progressBar.setVisibility(View.GONE);
+            //step 10 declaring ResultReceiver atribut
+        }
     }
 }

@@ -24,6 +24,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<!--        step 5 add service-->
+        <service android:name=".FetchAddressWithFusedLocation"/>
     </application>
 
 </manifest>
