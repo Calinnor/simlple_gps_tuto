@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonGetLocation;
     private TextView textCurrentLocation, textAddress;
     private ProgressBar progressBar;
+    private LocationManager locationManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
+
         //8.3 implement fusedLocation
         LocationServices.getFusedLocationProviderClient(MainActivity.this)
                 .requestLocationUpdates(locationRequest, new LocationCallback() {
@@ -119,10 +121,9 @@ public class MainActivity extends AppCompatActivity {
                             );
                         }
                         progressBar.setVisibility(View.GONE);
+
                     }
-                }, Looper.getMainLooper());
-
-
+                }
+                , Looper.getMainLooper());
     }
-
 }
