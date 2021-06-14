@@ -10,8 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="996ea229-1897-415b-b4f0-72cde5967df4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/FetchAddressWithFusedLocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_maps_17_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -22,8 +21,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/MyGPSTuto.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/MyGPSTuto.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,23 +42,16 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
+          <option name="groupModules" value="false" />
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="MyGPSTuto" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="MyGPSTuto" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="MyGPSTuto" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
               </path>
             </expand>
             <select />
@@ -74,7 +70,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="step_five_implement_location_with_fusedLocation" />
+        <entry key="$PROJECT_DIR$" value="step_six_implement_address_research_with_fused_location" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -235,38 +231,38 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="171" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1623515522447" />
-    <state width="1557" height="44" key="GridCell.Tab.0.bottom" timestamp="1623601782052">
+    <state width="1540" height="307" key="GridCell.Tab.0.bottom" timestamp="1623708169083">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="44" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1623601782052" />
-    <state width="1557" height="44" key="GridCell.Tab.0.center" timestamp="1623601782052">
+    <state width="1540" height="307" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1623708169083" />
+    <state width="1540" height="307" key="GridCell.Tab.0.center" timestamp="1623708169083">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="44" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1623601782052" />
-    <state width="1557" height="44" key="GridCell.Tab.0.left" timestamp="1623601782052">
+    <state width="1540" height="307" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1623708169083" />
+    <state width="1540" height="307" key="GridCell.Tab.0.left" timestamp="1623708169082">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="44" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1623601782052" />
-    <state width="1557" height="44" key="GridCell.Tab.0.right" timestamp="1623601782052">
+    <state width="1540" height="307" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1623708169082" />
+    <state width="1540" height="307" key="GridCell.Tab.0.right" timestamp="1623708169083">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="44" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1623601782052" />
-    <state width="1557" height="44" key="GridCell.Tab.1.bottom" timestamp="1623601782052">
+    <state width="1540" height="307" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1623708169083" />
+    <state width="1540" height="307" key="GridCell.Tab.1.bottom" timestamp="1623708169084">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="44" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1623601782052" />
-    <state width="1557" height="44" key="GridCell.Tab.1.center" timestamp="1623601782052">
+    <state width="1540" height="307" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1623708169084" />
+    <state width="1540" height="307" key="GridCell.Tab.1.center" timestamp="1623708169083">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="44" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1623601782052" />
-    <state width="1557" height="44" key="GridCell.Tab.1.left" timestamp="1623601782052">
+    <state width="1540" height="307" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1623708169083" />
+    <state width="1540" height="307" key="GridCell.Tab.1.left" timestamp="1623708169083">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="44" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1623601782052" />
-    <state width="1557" height="44" key="GridCell.Tab.1.right" timestamp="1623601782052">
+    <state width="1540" height="307" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1623708169083" />
+    <state width="1540" height="307" key="GridCell.Tab.1.right" timestamp="1623708169083">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="44" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1623601782052" />
+    <state width="1540" height="307" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1623708169083" />
     <state x="380" y="173" key="IDE.errors.dialog" timestamp="1623504267252">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

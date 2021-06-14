@@ -6,6 +6,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -24,52 +25,63 @@ import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
-
+//map implementatiion: step 1 in gradle
+//step 2 modify xml
+//step 3 modify attributs and on clicklisterner
 public class MainActivity extends AppCompatActivity {
 
     private static final int REQUEST_CODE_LOCATION_PERMISSIONS = 12340;
+    private MapFragment mapFragment;
+    private GoogleMap googleMap;
+    private double latitude;
+    private double longitude;
 
-    private Button buttonGetLocation;
-    private TextView textCurrentLocation, textAddress;
-    private ProgressBar progressBar;
-
-    //step 10
     private ResultReceiver resultReceiver;
-    //step 11 initiate resultReceiver (here in main)
 
-    //step 1 create a class for fetch address
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //step 11
+        //step 4 initiate fragment and cast to MapFragment
+        FragmentManager fragmentManager = getFragmentManager();
+        mapFragment = (MapFragment) fragmentManager.findFragmentById(R.id.id_for_google_map_fragment);
+        //step 5 create a method to getGoogleMap
         resultReceiver = new AdressesResultReceiver(new Handler());
-        //step 12 create a method to fetchAdress
-
-        textCurrentLocation = findViewById(R.id.current_location);
-        textAddress = findViewById(R.id.textAdress);
-        buttonGetLocation = findViewById(R.id.button_get_current_location);
-        progressBar = findViewById(R.id.progressBar);
-        onButtonLocationClick();
+        getCurrentLocation();
     }
 
-    //step 12
+    //step 5 :method to call google map in async
+    //step 5.3 add suppress warning
+    @SuppressWarnings("MissingPermission")
+    private void getMyGoogleMap() {
+        mapFragment.getMapAsync(new OnMapReadyCallback() {
+            @Override
+            public void onMapReady(GoogleMap googleMap) {
+                //implement support view (mainactivity) for map
+                MainActivity.this.googleMap = googleMap;
+                googleMap.moveCamera(CameraUpdateFactory.zoomBy(15));
+                //step 5.2 not needing new permission check because this method will be call just after the permissions call already done
+                googleMap.setMyLocationEnabled(true);
+                googleMap.addMarker(new MarkerOptions().position(new LatLng(48.5277772, 2.6580556))
+                        .title("apm"));
+                //step 6 after checkpermissions...thoses where check in getCurrentLocation, after check permissions return......
+            }
+        });
+    }
+
     private void fetchAddressFromCoordinates(Location location) {
         Intent intent = new Intent(this, FetchAddressWithFusedLocation.class);
         intent.putExtra(Constants.RECEIVER, resultReceiver);
         intent.putExtra(Constants.LOCATION_DATA_EXTRAS, location);
         startService(intent);
-    }//step 13 in getCurrentLocation()
-
-    private void onButtonLocationClick() {
-        buttonGetLocation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                    getCurrentLocation();
-            }
-        });
     }
 
     @Override
@@ -85,7 +97,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void getCurrentLocation() {
-        progressBar.setVisibility(View.VISIBLE);
 
         LocationRequest locationRequest = new LocationRequest();
         locationRequest.setInterval(5000);
@@ -106,6 +117,8 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
+        getMyGoogleMap();
+
         LocationServices.getFusedLocationProviderClient(MainActivity.this)
                 .requestLocationUpdates(locationRequest, new LocationCallback() {
 
@@ -119,36 +132,27 @@ public class MainActivity extends AppCompatActivity {
                         if(locationResult != null && locationResult.getLocations().size() > 0) {
 
                             int latestLocationIndex = locationResult.getLocations().size() -1;
-                            
-                            double latitude = locationResult.getLocations().get(latestLocationIndex).getLatitude();
-                            double longitude = locationResult.getLocations().get(latestLocationIndex).getLongitude();
-                            textCurrentLocation.setText(
-                                    String.format(
-                                            "Latitude: %s\nLongitude: %s ",
-                                            latitude, longitude
-                                    )
-                            );
-                            //step 14
+                            latitude = locationResult.getLocations().get(latestLocationIndex).getLatitude();
+                            longitude = locationResult.getLocations().get(latestLocationIndex).getLongitude();
                             Location location = new Location("providerNA");
                             location.setLatitude(latitude);
                             location.setLongitude(longitude);
                             fetchAddressFromCoordinates(location);
-                          //step 13 placing here progressBar
-                        }else {
-                            progressBar.setVisibility(View.GONE);
-                        }
-                        //in step 13 progressBar move just ahead
-//                        progressBar.setVisibility(View.GONE);
 
+                            //step 7 if map != null so we get data
+                            if (googleMap != null) {
+                                LatLng googleLocation = new LatLng(latitude, longitude);
+                                googleMap.moveCamera(CameraUpdateFactory.newLatLng(googleLocation));
+                            }
+                            //step 8 in manifest add apiKey
+                        }
                     }
                 }
                 , Looper.getMainLooper());
     }
 
-    //step 9 create class which receive results for addresses
     private class AdressesResultReceiver extends ResultReceiver {
 
-        //step 9.1 constructor without public
         /**
          * Create a new ResultReceive to receive results.  Your
          * {@link #onReceiveResult} method will be called from the thread running
@@ -160,17 +164,12 @@ public class MainActivity extends AppCompatActivity {
             super(handler);
         }
 
-        //step 9.2 onReceiverResult
         @Override
         protected void onReceiveResult(int resultCode, Bundle resultData) {
             super.onReceiveResult(resultCode, resultData);
             if (resultCode == Constants.SUCCES_RESULT) {
-                textAddress.setText(resultData.getString(Constants.RESULT_DATA_KEY));
-            }else {
                 Toast.makeText(MainActivity.this, resultData.getString(Constants.RESULT_DATA_KEY), Toast.LENGTH_SHORT).show();
             }
-            progressBar.setVisibility(View.GONE);
-            //step 10 declaring ResultReceiver atribut
         }
     }
 }
