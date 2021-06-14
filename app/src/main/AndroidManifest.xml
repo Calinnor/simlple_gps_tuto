@@ -20,6 +20,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--        step 8 api key-->
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBkTRwVToZHHwEsO-Uv7WiQViC7ydKflpA"/>
+        <!--        if there's no good key it doesnt work !-->
+
     </application>
 
 </manifest>
