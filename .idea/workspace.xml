@@ -10,20 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="996ea229-1897-415b-b4f0-72cde5967df4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/FetchAddressWithFusedLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_maps_17_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_location_17_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_places_placereport_17_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/MyGPSTuto.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/MyGPSTuto.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/FetchAddressWithFusedLocation.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cirederf/mygpstuto/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,22 +41,12 @@
     <system id="GRADLE">
       <state>
         <projects_view>
+          <option name="groupModules" value="false" />
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="MyGPSTuto" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="MyGPSTuto" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="MyGPSTuto" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
               </path>
             </expand>
             <select />
@@ -71,10 +62,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="step_two_adding_popup_permissions_at_starting_app" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="step_five_implement_location_with_fusedLocation" />
+        <entry key="$PROJECT_DIR$" value="step_six_implement_address_research_with_fused_location" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -90,7 +84,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Go4LunchHome" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Go4Lunch" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -101,7 +95,7 @@
       <recent name="com.cirederf.mygpstuto" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -167,6 +161,48 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyGPSTuto [signingReport]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signingReport" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signingReport" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Android App.app" />
+      <item itemvalue="Gradle.MyGPSTuto [signingReport]" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -212,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623504773336</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adding address research and display with fusedLocation">
+      <created>1623605606477</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1623605606477</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -220,61 +263,70 @@
     <MESSAGE value="Commit on second branch : adding popup for permissions at starting app" />
     <MESSAGE value="Commit on third branch : implement dedied class to fetch location" />
     <MESSAGE value="Adding requestPermissions popup in mainActivity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding requestPermissions popup in mainActivity" />
+    <MESSAGE value="Adding address research and display with fusedLocation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding address research and display with fusedLocation" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="254" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623703469921">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="254" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1623703469921" />
     <state x="605" y="136" key="#com.intellij.ide.util.MemberChooser" timestamp="1623602167490">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="605" y="136" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1623602167490" />
-    <state x="411" y="17" key="CommitChangelistDialog2" timestamp="1623504770239">
+    <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1623701522807">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="411" y="17" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1623504770239" />
-    <state x="580" y="171" key="FileChooserDialogImpl" timestamp="1623515522447">
+    <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1623701522807" />
+    <state x="411" y="17" key="CommitChangelistDialog2" timestamp="1623605603391">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="580" y="171" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1623515522447" />
-    <state width="1557" height="44" key="GridCell.Tab.0.bottom" timestamp="1623601782052">
+    <state x="411" y="17" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1623605603391" />
+    <state x="580" y="171" key="FileChooserDialogImpl" timestamp="1623701894800">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="44" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1623601782052" />
-    <state width="1557" height="44" key="GridCell.Tab.0.center" timestamp="1623601782052">
+    <state x="580" y="171" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1623701894800" />
+    <state width="1540" height="2" key="GridCell.Tab.0.bottom" timestamp="1623704011006">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="44" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1623601782052" />
-    <state width="1557" height="44" key="GridCell.Tab.0.left" timestamp="1623601782052">
+    <state width="1540" height="2" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1623704011006" />
+    <state width="1540" height="2" key="GridCell.Tab.0.center" timestamp="1623704011005">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="44" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1623601782052" />
-    <state width="1557" height="44" key="GridCell.Tab.0.right" timestamp="1623601782052">
+    <state width="1540" height="2" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1623704011005" />
+    <state width="1540" height="2" key="GridCell.Tab.0.left" timestamp="1623704011005">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="44" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1623601782052" />
-    <state width="1557" height="44" key="GridCell.Tab.1.bottom" timestamp="1623601782052">
+    <state width="1540" height="2" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1623704011005" />
+    <state width="1540" height="2" key="GridCell.Tab.0.right" timestamp="1623704011005">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="44" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1623601782052" />
-    <state width="1557" height="44" key="GridCell.Tab.1.center" timestamp="1623601782052">
+    <state width="1540" height="2" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1623704011005" />
+    <state width="1557" height="44" key="GridCell.Tab.1.bottom" timestamp="1623605864135">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="44" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1623601782052" />
-    <state width="1557" height="44" key="GridCell.Tab.1.left" timestamp="1623601782052">
+    <state width="1557" height="44" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1623605864135" />
+    <state width="1557" height="44" key="GridCell.Tab.1.center" timestamp="1623605864135">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="44" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1623601782052" />
-    <state width="1557" height="44" key="GridCell.Tab.1.right" timestamp="1623601782052">
+    <state width="1557" height="44" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1623605864135" />
+    <state width="1557" height="44" key="GridCell.Tab.1.left" timestamp="1623605864135">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="44" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1623601782052" />
+    <state width="1557" height="44" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1623605864135" />
+    <state width="1557" height="44" key="GridCell.Tab.1.right" timestamp="1623605864135">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="44" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1623605864135" />
     <state x="380" y="173" key="IDE.errors.dialog" timestamp="1623504267252">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="380" y="173" key="IDE.errors.dialog/0.0.1600.860@0.0.1600.860" timestamp="1623504267252" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1623504783865">
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1623605614916">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1623504783865" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1623605614916" />
     <state x="601" y="336" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1623495810458">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -283,5 +335,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="500" y="187" key="refactoring.ChangeSignatureDialog/0.0.1600.860@0.0.1600.860" timestamp="1623499114675" />
+    <state x="456" y="195" width="672" height="677" key="run.anything.popup" timestamp="1623702807355">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="456" y="195" width="672" height="677" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1623702807355" />
   </component>
 </project>

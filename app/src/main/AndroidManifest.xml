@@ -2,13 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cirederf.mygpstuto">
 
-    <!--step 2 permissions-->
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
-    <!--step 3 usesTraffic and supportRtl-->
-<!--    step 4 in gradle-->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,8 +21,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<!--        step 5 add service-->
-        <service android:name=".FetchAddressWithFusedLocation"/>
+
+        <!--        step 8 api key-->
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBkTRwVToZHHwEsO-Uv7WiQViC7ydKflpA"/>
+        <!--        if there's no good key it doesnt work !-->
+
     </application>
+<!--    SHA1: EC:1E:08:CB:A7:0D:04:56:65:2C:97:18:BE:AB:64:FB:30:9E:D0:2C -->
 
 </manifest>
