@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.cirederf.mygpstuto">
 
     <!--step 2 permissions-->
@@ -17,7 +18,8 @@
         android:usesCleartextTraffic="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyGPSTuto">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            tools:ignore="Instantiatable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,7 +31,7 @@
 
         <!--        step 8 api key-->
         <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBkTRwVToZHHwEsO-Uv7WiQViC7ydKflpA"/>
+            android:value="@string/apikey"/>
         <!--        if there's no good key it doesnt work !-->
     </application>
 
