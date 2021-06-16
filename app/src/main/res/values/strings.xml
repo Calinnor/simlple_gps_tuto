@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyGPSTuto</string>
+    <string name="apikey">"AIzaSyBkTRwVToZHHwEsO-Uv7WiQViC7ydKflpA"</string>
 </resources>
